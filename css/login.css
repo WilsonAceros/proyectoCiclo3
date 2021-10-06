@@ -1,0 +1,294 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #333;
+    color: whitesmoke;
+    line-height: 1.4em;
+    margin: 0;
+}
+
+p{
+    margin-bottom: 1.6em;
+}
+
+.container{
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.header{
+    background: black;
+    color: whitesmoke;
+    margin: 0;
+    padding: 2rem 0;
+
+    /* position: fixed; */
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 50px;
+
+    /* alto y ancho de la cabecera */
+    width: 100%;
+    /* height: 100px; */
+
+    /* origen de la imagen */
+    /* background-image: url(/imgs/clothes.jpg); */
+    /* background-image: transparent; */
+
+    /* fijar la imagen, no se mueve con el scroll */
+    /* background-attachment: fixed; */
+
+    /* imagenn centrada */
+    /* background-position: center; */
+
+    /* imagen se adapta al tamaño del header*/
+    /* background-size: cover; */
+
+    /* imagen en posicion relativa, se queda ahi */
+    /* position: relative; */
+
+    /* Si algo se sale oculte lo que esta salido */
+    /* overflow: hidden; */
+}
+
+.header a{
+    color: whitesmoke;
+    text-decoration: none;
+    margin: 0;
+}
+
+header .textos{
+    margin-top:150px;
+    text-align: center;
+    color: white;
+}
+
+header .titulo{
+    font-size: 60px;
+}
+
+header .subtitulo{
+    font-size: 30px;
+    font-weight: 100;
+    margin-bottom: 40px;
+}
+
+header .boton{
+    /* tenga la propiedad de tener una linea de texto */
+    display: inline-block;
+    padding: 10px;
+    width: 120px;
+    border: 1px solid white;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 15px;
+}
+
+header .boton:hover{
+    background-color:rgba(255, 217, 0, 0.493);
+}
+
+
+.logo-nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo{
+    letter-spacing: 15px;
+    font-size: 1.2em;
+}
+
+.menu-icon{
+    display: none;
+}
+
+.navigation ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+    .navigation ul li{
+        display: inline-block;
+    }
+        .navigation ul li a{
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            transition: all 0.4s linear;
+            border-radius: 5px;
+        }
+            .navigation ul li a:hover{
+                background-color: rgba(255, 217, 0, 0.493);
+            }
+.main{
+    padding-top: 12rem;
+
+}
+
+
+.galeria{
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    display: flex;
+
+    /* Se pueda mover  */
+    position: relative;
+
+    /* Organiza todas las imagenes en una sola imagen*/
+    flex-wrap: wrap;
+}
+
+.imagenes{
+    width: 20%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+
+.imagenes img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.footer{
+    background: #575656;
+    padding: 4rem 0;
+    text-align: center;
+    margin-top: 6rem;
+    color: black;
+}
+
+@media only screen and (max-width:767px){
+
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+        padding: 0.5rem 1rem;
+    }
+
+    .titulo{
+        font-size: 25%;
+    }
+
+    .navigation{
+        width:100%;
+        margin-top: 1rem;
+    }
+        .navigation ul{
+            display: none;
+        }
+
+        .navigation ul.show{
+            display: block;
+        }
+
+        .navigation ul li{
+            display: block;
+        }
+            .navigation ul li a{
+                display: inline-block;
+                padding: 0.5rem 0;
+                transition: all 0.4s linear;
+                border-radius: 5px;
+            }
+                .navigation ul li a:hover{
+                    background-color: rgba(255, 217, 0, 0.493);
+                }
+
+
+}
+
+
+/* LOGIN HTML */
+
+.form2{
+    padding: 20px;
+    text-align: center;
+    color: whitesmoke;
+    margin-top: 80px;
+}
+
+.main_sesion{
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.main_sesion h2{
+    color: whitesmoke;
+}
+
+.name{
+    margin-bottom: 20px;
+}
+
+.name label{
+    float: left;
+    margin-left: 455px;
+}
+
+.pass label{
+    float: left;
+    margin-left: 455px;
+}
+
+
+#nombre{
+    width: 400px;
+    height: 30px;
+}
+
+#pass{
+    width: 400px;
+    height: 30px;
+}
+
+.recordarpass{
+    width: 400px;
+    height: 30px;
+    margin-left: 455px;
+    /* background-color: blue; */
+    /* text-align: center; */
+    /* display: flex; */
+}
+
+.check{
+    float: left;
+}
+
+.forgot-password{
+    float: right;
+    color: rgba(255, 217, 0, 0.493);
+}
+
+.forgot{
+    text-decoration: underline;
+}
+
+
+.botonInicio{
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    display: inline-block;
+    width: 400px;
+    color: white;
+    font-size: 20px;
+    border-radius: 15px;
+    text-align: center;
+    background-color:black;
+    transition: all 0.4s linear;
+}
+
+.botonInicio:hover{
+    background-color:rgba(255, 217, 0, 0.493);
+}
+
+.form-registro a{
+    color: #b85635;
+}
